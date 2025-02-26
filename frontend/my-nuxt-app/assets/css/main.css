@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.mx-datepicker {
+    width: 100% !important;
+  }
+  
+  @media (min-width: 640px) {
+    .mx-datepicker {
+      width: 16rem !important; /* equivalent to sm:w-64 */
+    }
+  }
