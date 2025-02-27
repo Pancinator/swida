@@ -30,7 +30,7 @@
 
     <!-- Footer -->
     <footer class="bg-indigo-50 text-indigo-500 p-4 text-center">
-      © 2023 Matej Pancak
+      © 2025 Matej Pancak
     </footer>
   </div>
 </template>

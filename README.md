@@ -13,8 +13,10 @@ This is a containerized application for managing transport orders. The project c
 To build and run the project from the root directory, use:
 
 ```bash
+cd swida
 docker-compose up -d --build
 ```
+**Now is your transport management app available on http://locahost:3000/orders**
 
 ## Configuration
 The Nuxt app uses runtime configuration for the API base URL. In nuxt.config.ts, the configuration is set as follows:

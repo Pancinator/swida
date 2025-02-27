@@ -13,7 +13,7 @@ export function useTransportOrders() {
     nextUrl: null as string | null,
     previousUrl: null as string | null,
     currentPage: 1,
-    pageSize: 10,
+    pageSize: 3,
     status: '',
     error: ''
   })

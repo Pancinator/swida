@@ -144,18 +144,15 @@ const goToPrevious = () => {
   }
 }
 
-
-console.log('selected date: ', selectedDate.value);
-watch(selectedDate, (newDate, oldDate) => {
-  console.log(oldDate, newDate)
-  if (newDate != oldDate) {
-    searchOrders();
-  }
-})
-
 const searchOrders = () => {
   loadOrders({ page: state.currentPage.toString(), date: selectedDate.value, customer_name: searchQuery.value })
 }
+
+watch(selectedDate, (newDate, oldDate) => {
+  if (newDate !== oldDate) {
+    searchOrders()
+  }
+})
 </script>
 
 <script lang="ts">
