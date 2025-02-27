@@ -4,8 +4,8 @@ This is a containerized application for managing transport orders. The project c
 
 ## Technologies Used
 
-- **Django 3.2** – Robust and scalable backend framework.
-- **Nuxt 3** – Modern Vue.js framework for a reactive, SEO-friendly frontend.
+- **Django 3.2**
+- **Nuxt 3** 
 - **PostgreSQL** – Database used for persistent data storage.
 - **Docker & Docker Compose** – Containerization for consistency across environments. Multistage builds are used to keep production images lean
 ## Getting Started
