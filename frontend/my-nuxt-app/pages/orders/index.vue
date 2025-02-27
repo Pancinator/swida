@@ -102,7 +102,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useTransportOrders } from '~/composables/useTransportOrders.js'
 import Datepicker from 'vue3-datepicker-next'
 import 'vue-datepicker-next/index.css'
@@ -143,6 +143,15 @@ const goToPrevious = () => {
     loadOrders({ page: (state.currentPage - 1).toString(), date: '', customer_name: '' })
   }
 }
+
+
+console.log('selected date: ', selectedDate.value);
+watch(selectedDate, (newDate, oldDate) => {
+  console.log(oldDate, newDate)
+  if (newDate != oldDate) {
+    searchOrders();
+  }
+})
 
 const searchOrders = () => {
   loadOrders({ page: state.currentPage.toString(), date: selectedDate.value, customer_name: searchQuery.value })
